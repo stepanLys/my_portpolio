@@ -1,0 +1,163 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!-- Bootstrap-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'font/font-awesome-4.7.0/css/font-awesome.min.css' %}">
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+
+
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <header class="header">
+            <div class="container header-content">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3 text-center ">
+                        <h2 class="h2">Hello, I'm Stepan Lys</h2>
+                        <h1 class="h1">Full stack web developer</h1>
+                        <a href="#"><i class="fa fa-arrow-down"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-social">
+                <nav class="soc">
+                    <ul>
+                        <li><a href="{{ facebook }}"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="{{ vk }}"><i class="fa fa-vk"></i></a></li>
+                        <li><a href="{{ git }}"> <i class="fa fa-github"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="mnu">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-2">
+                            <nav class="main-mnu">
+                                <ul>
+                                    <li><a href="">about</a></li>
+                                    <li><a href="">services</a></li>
+                                    <li><a href="">portfolio</a></li>
+                                    <li><a href="">skills</a></li>
+                                    <li><a href="">resume</a></li>
+                                    <li><a href="">what say about me</a></li>
+                                    <li><a href="">contacts</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <!-- About Section -->
+        <div id="about">
+          <div class="container">
+            <div class="section-title text-center center">
+              <h3 class="h3">About me</h3>
+              <hr>
+            </div>
+            <div class="row">
+              <div class="col-md-12 text-center"><img src="img/about.jpg"></div>
+              <div class="col-md-8 col-md-offset-2">
+                <div class="about-text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+                <!-- Services Section -->
+        <div id="services" class="text-center">
+          <div class="container">
+            <div class="section-title center">
+              <h2>My Services</h2>
+              <hr>
+            </div>
+            <div class="space"></div>
+            <div class="row">
+              <div class="col-md-3 col-sm-6 service"> <i class="fa fa-laptop"></i>
+                <h4>Web Design</h4>
+                <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.</p>
+              </div>
+              <div class="col-md-3 col-sm-6 service"> <i class="fa fa-code"></i>
+                <h4>Development</h4>
+                <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque.</p>
+              </div>
+              <div class="col-md-3 col-sm-6 service"> <i class="fa fa-rocket"></i>
+                <h4>Branding</h4>
+                <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.</p>
+              </div>
+              <div class="col-md-3 col-sm-6 service"> <i class="fa fa-bullhorn"></i>
+                <h4>Marketing</h4>
+                <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+                <!-- Portfolio Section -->
+
+        <h3>Portfolio</h3>
+
+
+                <!-- Skills Section -->
+        <div id="skills" class="text-center">
+          <div class="container">
+            <div class="section-title center">
+              <h2>My Skills</h2>
+              <hr>
+            </div>
+            <div class="row">
+              <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="95"> <span class="percent">95</span> </span>
+                <h4>HTML5</h4>
+              </div>
+              <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="85"> <span class="percent">85</span> </span>
+                <h4>CSS3</h4>
+              </div>
+              <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="80"> <span class="percent">80</span> </span>
+                <h4>jQuery</h4>
+              </div>
+              <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="80"> <span class="percent">80</span> </span>
+                <h4>Python/Django</h4>
+              </div>
+              <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="70"> <span class="percent">70</span> </span>
+                <h4>Photoshop</h4>
+              </div>
+              <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="65"> <span class="percent">65</span> </span>
+                <h4>Illustrator</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+    </div>
+
+
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="{% static 'js/waypoints.js' %}"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
