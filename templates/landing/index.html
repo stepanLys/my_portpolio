@@ -9,7 +9,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 {#  <meta name="description" content="HTML5 website template">#}
 {#  <meta name="keywords" content="global, template, html, sass, jquery">#}
-{#  <meta name="author" content="Bucky Maler">#}
+  <meta name="author" content="Stepan Lys">
 
 {#  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">#}
   <link rel="stylesheet" href="{% static 'main.css' %}">
@@ -182,7 +182,7 @@
             <div class="hire">
               <h2>You want us to do</h2>
               <!-- checkout formspree.io for easy form setup -->
-              <form class="work-request">
+              <form class="work-request">{% csrf_token %}
                 <div class="work-request--options">
                   <span class="options-a">
                     <input id="opt-1" type="checkbox" value="app design">
@@ -251,11 +251,11 @@
                 </div>
                 <div class="work-request--information">
                   <div class="information-name">
-                    <input id="name" type="text" spellcheck="false">
+                    <input id="name" type="text" spellcheck="false" name="{{ form.name.name }}">
                     <label for="name">Name</label>
                   </div>
                   <div class="information-email">
-                    <input id="email" type="email" spellcheck="false">
+                    <input id="email" type="email" spellcheck="false" name="{{ form.email.name }}">
                     <label for="email">Email</label>
                   </div>
                 </div>

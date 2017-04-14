@@ -11,11 +11,16 @@ html, body{
 a{
     color: #c0c0c0;
     text-decoration: none;
-    transition: all, 0.3, ease;
+    transition: color 0.3s ease;
 }
-a:hover{
+a:hover, a:focus, a:active{
     color: #fff;
     text-decoration: none;
+    font-weight: 400;
+}
+ul, li, p{
+    margin: 0;
+    padding: 0;
 }
 
 .h1{
@@ -24,10 +29,11 @@ a:hover{
 }
 .h2 {
     font-size: 36px;
-    font-weight: 200;   
+    font-weight: 200;
 }
 .h3{
-    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
 }
 .fa{
     color: #fff;
@@ -52,7 +58,7 @@ a:hover{
     max-height:100%;
 }
 
-.header{
+#header{
     height: 100vh;
     background-image: url(img/bg-top.png);
     background-position: center;
@@ -69,12 +75,20 @@ a:hover{
 }
 
 .header-social{
-    border-left: 1px solid rgba(255,255,255,0.5);
+    /*border-left: 1px solid rgba(255,255,255,0.5);*/
     position: absolute;
     display: flex;
     right:0;
     height: 100%;
     top:0;
+}
+.line{
+    position: absolute;
+    height: 100%;
+    border-left: 1px solid rgba(255,255,255,0.5);
+    top: 0;
+    right: 58px;
+    z-index: 3;
 }
 .soc{
     margin: auto;
@@ -88,30 +102,53 @@ a:hover{
     padding: 10px;
 }
 
+.affix {
+  top:0;
+  width: 100%;
+  z-index: 2 !important;
+}
+
+.navbar{
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+    background-color: #2f2f2f;
+    margin: 0;
+    border-radius: 0;
+}
+
 .mnu{
     position: absolute;
     width:100%;
     border-top: 1px solid rgba(255,255,255,0.5);
-    /*background-color: rgba(222,222,222, 0.5);*/
+    background-color: rgba(222,222,222, 0.5);
     bottom:0;
     right:0;
     float: right;
     text-transform: uppercase;
 }
+
 .mnu li{
     list-style-type: none;
     display: inline-block;
     padding: 20px 25px;
     color: #fff;
 }
-
+.mnu li:first-child{
+    float: left;
+}
+.mnu li a:focus, .mnu li a:active{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+}
 
 /* About section */
 
 #about {
 	padding: 80px 0;
 	background: #333;
+    color: #fff;;
 }
+
 hr{
     height: 4px;
     width: 70px;
@@ -120,6 +157,7 @@ hr{
     background: #E87E04;
     margin: 0 auto;
     margin-bottom: 30px;
+    margin-top: 15px;
     border: 0;
 }
 #about img{
@@ -143,10 +181,9 @@ hr{
 }
 #services H4 {
 	color: #E87E04;
-	text-shadow: 1px 1px #fff;
 }
-.space {
-	margin-top: 80px;
+#services .service {
+	margin-top: 40px;
 }
 #services i.fa {
     background: none;
@@ -154,6 +191,12 @@ hr{
 	color: #2c3e50;
 	margin-bottom: 20px;
 }
+
+/* Portfolio Section */
+#portfolio{
+    margin: 80px 0;
+}
+
 
 /* Skills Section */
 #skills {
@@ -166,6 +209,7 @@ hr{
 	color: #474d5d;
 }
 #skills .skill {
+    margin-top: 40px;
 	margin-bottom: 40px;
 	text-align: center;
 	padding: 0px;
@@ -173,7 +217,6 @@ hr{
 #skills .skill h4 {
 	font-weight: 700;
 	color: #E87E04;
-	text-shadow: 1px 1px #fff;
 }
 .chart {
 	position: relative;
@@ -199,4 +242,24 @@ hr{
 	content: '%';
 	margin-left: 0.1em;
 	font-size: .8em;
+}
+
+#contact{
+    background-color: #333;
+    color: #fff;
+    padding: 80px 0;
+}
+.social li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+
+#footer{
+    border-top: 1px solid rgba(255,255,255,0.5);
+    background-color: #282828;
+}
+#footer .copirate{
+    font-size: 11px;
+    color: rgba(255,255,255,0.5);
 }
